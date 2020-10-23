@@ -1,0 +1,298 @@
+header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(#000, .2), rgba(#000, .2)), url(../images/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.bodyActive {
+    overflow: hidden;
+}
+
+
+
+.nav {
+    padding: 1rem 0;
+    //position: fixed;
+    //top: 0;
+    //width: 100%;
+    //background-color: $color-primary-dark; thpse line for sticky nav
+    //z-index: 10499;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        
+    }
+
+    &__logo {
+        font-size: 4rem;
+        color: $color-white;
+        font-family: $font-display;
+        flex: 2;
+    }
+    &__items {
+        display: flex;
+        align-items: center;
+        @media screen and (max-width: 1000px) {
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            background-color: $color-primary-dark;
+            z-index: 10500;
+            clip-path: circle(10px at 93% -10%);
+            -webkit-clip-path: circle(10px at 93% -10%);
+            transition: all 1s ease-out;
+
+        }
+
+        &.active {
+        
+            clip-path: circle(1500px at 93% -10%);
+            -webkit-clip-path: circle(1500px at 93% -10%);
+        }
+
+    }
+    &__menu {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 30%;
+        }
+        
+        &-items {
+            
+        }
+        &-item:link,
+        &-item:visited {
+            font-size: 1.8rem;
+            padding: .5rem .5rem;
+            margin-right: 2rem;
+            text-decoration: none;
+            color:  $color-white;
+            transition: all 1s;
+            position: relative;
+            @media screen and (max-width: 1000px) {
+                margin-right: 0rem;
+                font-size: 2.5rem;
+            }
+            &::after {
+                content: "";
+                width: 0%;
+                height: 2px;
+                background: $color-primary;
+                transition: width .3s;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+        }
+
+        &-item:hover::after {
+            width: 100%;
+        }
+
+    } 
+
+
+
+
+
+
+    &__btn {
+        font-family: $font-display;
+        font-size: 1.8rem;
+        padding: .3rem 4rem;
+        text-decoration: none;
+        color: $color-primary-light !important;
+        border-radius: 100rem;
+        border: 3px solid $color-primary;
+        transition: all .5s ease-in-out;
+        position: relative;
+        background-color: $color-primary;
+        @media screen and (max-width: 1000px) {
+            position: fixed;
+            top: 5rem;
+            font-size: 3rem;
+            
+
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary;
+            border-radius: 100rem;
+            display: block;
+            z-index: -1;
+        }
+
+        &:hover {
+            transform: rotateX(360deg);
+        }
+    }
+}
+
+.socialActive {
+    display: flex !important; 
+}
+.socialmedia {
+    list-style: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50% ;
+    right: 2rem;
+    transform: translateY(-50%);
+    @media screen and (max-width: 1000px) {
+          top: 90%;
+          flex-direction: row;
+          position: fixed;
+          display: none;
+          right: 50%;
+          transform: translateX(+50%);
+          z-index: 10501;
+          
+    }
+
+    & li a {
+        text-decoration: none;
+        color: $color-white;
+        font-size: 2.5rem;
+        margin: 5px;
+        transition: color .5s;
+        @media screen and (max-width: 1000px) {
+            margin: 2rem;
+        }
+    }
+    &__git:hover{
+            color: #333;
+        }
+    &__face:hover {
+            color: #3b5999;
+        }
+    &__insta:hover {
+            color: #e4405f;
+        }
+    &__whatsapp:hover {
+            color: #25D366;
+        }
+
+}
+.hamburger {
+    @media screen and (max-width: 1000px) {
+        position: absolute;
+        cursor: pointer;
+        right: 2%;
+        z-index: 10501;
+    }
+}
+.line {
+    @media screen and (max-width: 1000px) {
+            
+            width: 3rem;
+            height: 3px;
+            background: $color-white;
+            margin: 5px;
+            display: block;
+        }
+    
+
+}
+
+.intro {
+    position: absolute;
+    width: 70%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__heading {
+        color: $color-white;
+        font-size: 6rem;
+        letter-spacing: -2px;
+        
+        &-name {
+            color: $color-primary-dark;
+        }
+    }
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 8rem;
+    background-image: url(../images/wave.png);
+    background-size: 1000px 100px;
+
+
+    &.wave1 {
+        animation: animate 10s linear infinite ;
+        z-index: 1000;
+        opacity: .8;
+        animation-delay: 0s;
+        bottom: 0;
+    }
+    &.wave2 {
+        animation: animate2 15s linear infinite;
+        z-index: 1000;
+        opacity: .5;
+        animation-delay: -5s;
+        bottom: 10px;
+    }
+    &.wave3 {
+        animation: animate 30s reverse linear infinite;
+        z-index: 998;
+        opacity: .2;
+        animation-delay: -2s;
+        bottom: 15px;
+    }
+    &.wave4 {
+        animation: animate2 10s linear infinite;
+        z-index: 1000;
+        opacity: .5;
+        animation-delay: -5s;
+        bottom: 20px;
+    }
+}
+
+
+@keyframes animate {
+
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: -1000px;
+    }
+}
