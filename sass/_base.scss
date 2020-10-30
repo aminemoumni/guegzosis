@@ -54,8 +54,12 @@ body {
     font-size: 4.5rem;
     color: transparent;
     text-align: center;
-    background-image: linear-gradient(to left, $color-primary, $color-primary-dark);
+    background-image: linear-gradient(to left, $color-primary-dark, $color-primary-dark, $color-primary, $color-primary-dark, $color-primary-dark);
     -webkit-background-clip: text;
     margin-bottom: 4rem;
 
+}
+
+.fa-chevron-right {
+    font-size: 16px;
 }

@@ -30,3 +30,16 @@ hamburger.addEventListener("click", () => {
 // for(let i = 0; i < logo.length; i++) {
 //     console.log(`Letter ${i} is ${logo[i].getTotalLength()}`)
 // }
+
+
+
+/** Typed js */
+
+var options = {
+    strings: ['Frontend', 'Backend'],
+    typeSpeed: 100,
+    backSpeed: 60,
+    loop: true
+  };
+  
+var typed = new Typed('.typedone', options);

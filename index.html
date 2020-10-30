@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="./js/jquery.js"></script>
     <title>Guegzosis</title>
 </head>
@@ -34,10 +35,10 @@
         </nav>
         <div class="social">
             <ul class="socialmedia">
-                <li><a class="socialmedia__git" href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                <li><a class="socialmedia__face" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                <li><a class="socialmedia__insta"href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                <li><a class="socialmedia__whatsapp"href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+                <li><a class="socialmedia__git" href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a class="socialmedia__face" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a class="socialmedia__insta"href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a class="socialmedia__whatsapp"href="#"><i class="fab fa-whatsapp"></i></a></li>
             </ul>
         </div>
         <div class="intro">
@@ -55,11 +56,55 @@
         </div> -->
     </header>
 
-    <section class="About">
-        
+    <section class="about">
+        <div class="about__container row">
+            <h2 class="about__title text-secondary">
+                Get To Know Me Better
+            </h2>
+            <div class="about__photo">
+                <figure class="about__photo--pic">
+                    <img src="./images/me.jpg" alt="" class="about__photo--pic--picture">
+                    <figcaption>Amine Moumni</figcaption>
+                </figure>
+                <h4 class="about__photo--text">
+                    Im a <span class="typedone"></span> web developer
+                </h4>
+            </div>
+            <p class="about__paraghraph">
+                <!-- Hi lets start to know me better my name is Amine Moumni like u saw in the first title of the page <i class="fas fa-laugh-squint"></i>
+                i have 22 years old a technicien specialise developement multimedia fullstack web developer
+                humm what i love ?
+                i love develope web site and web application with a patience, time and the most important thing with love. so if u are like me dont firget the contact me if u see anything need change on my portfolio or for a freelance mission.
+
+                what i do in the free time ?
+                i have three most importance thing in my life i cant resist to do them 
+                i love ride my bicycle (VTT and Enduro), i like long walk with someone i love and i like to play games for sure like everyone
+                u can download my resume here below . thank you for your time <i class="fa fa-heart" aria-hidden="true"></i>. -->
+
+                Hi let's start to know me better my name is Amine Moumni like you saw in the first title of the page <i class="fas fa-laugh-squint"></i>.<br> 
+                I have 22 years old, I'm a full stack web developer <br>
+                <br>
+                <span>Hmm, what I love?</span> <br>
+                I love to develop web sites and web applications with patience, time, and the most important thing with love. <br>
+                <br>
+                So if you are like me don't forget to contact me if you see anything that needs change on my portfolio or for a freelance mission. <br>
+                <br>
+                <span>What do I do in my free time?</span> <br>
+                I have three most important thing in my life I can't resist to do them: <br>
+                <i class="fas fa-chevron-right"></i> I love riding my bicycle (VTT and Enduro). <br>
+                <i class="fas fa-chevron-right"></i> I like long walk with someone I love. <br>
+                <i class="fas fa-chevron-right"></i> I like to play games for sure like everyone <br>
+                <br>
+                <span>You can download my resume here below. thank you for your time </span> <i class="fa fa-heart" aria-hidden="true"></i>.
+                
+            </p>
+            <div class="btn__container">
+                <a href="./images/aminecv.pdf" class="btn btn-white" download><i class="fas fa-arrow-circle-down"></i> Download Resume</a>
+            </div>
+        </div>
     </section>
     <section class="competences__section row">
-        <h2 class="text-secondary">Competences</h2>
+        <h2 class="text-secondary">Competences (1)</h2>
         <div class="competences">
             <div class="competences__frontend">
                 <h3 class="competences__frontend--title">
@@ -138,13 +183,160 @@
                             Symfony 4/5
                         </p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div class="cc">
+    <section class="competences__section row">
+        <h2 class="text-secondary">Competences (2)</h2>
+        <div class="competences">
+            <div class="competences__frontend">
+                <h3 class="competences__frontend--title">
+                    <span>
+                        Frontend 
+                    </span> 
+                </h3>
+                <div class="competences__frontend--containe">
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>HTML5</h3>
+                            <p id="percent">90%</p>
+                        </div>
+                        <div class="item-bare w-90">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>CSS3, SASS,  Bootstrap 4</h3>
+                            <p id="percent">80%</p>
+                        </div>
+                        <div class="item-bare w-80">
+                        </div>
+                    </div>
+                    <!-- <div class="item">
+                        <div class="item-percent">
+                            <h3>SASS</h3>
+                            <p id="percent">80%</p>
+                        </div>
+                        <div class="item-bare w-80">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>Bootstrap 4</h3>
+                            <p id="percent">75%</p>
+                        </div>
+                        <div class="item-bare w-75">
+                        </div>
+                    </div> -->
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>JavaScript ES6</h3>
+                            <p id="percent">75%</p>
+                        </div>
+                        <div class="item-bare w-75">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>jQuery, Ajax</h3>
+                            <p id="percent">80%</p>
+                        </div>
+                        <div class="item-bare w-80">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>Vue Js (Vue CLI, VueX, Vue-Router, Vuetify, Axios)</h3>
+                            <p id="percent">75%</p>
+                        </div>
+                        <div class="item-bare w-75">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="competences__frontend">
+                <h3 class="competences__frontend--title">
+                    <span>
+                        Backend 
+                    </span> 
+                </h3>
+                <div class="competences__frontend--containe">
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>PHP</h3>
+                            <p id="percent">85%</p>
+                        </div>
+                        <div class="item-bare w-85">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>MySql</h3>
+                            <p id="percent">70%</p>
+                        </div>
+                        <div class="item-bare w-70">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>Laravel or Laravel + Vue (SPA)</h3>
+                            <p id="percent">80%</p>
+                        </div>
+                        <div class="item-bare w-80">
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>Symfony</h3>
+                            <p id="percent">70%</p>
+                        </div>
+                        <div class="item-bare w-70">
+                        </div>
+                    </div>
                     
-                    
+                    <div class="item">
+                        <div class="item-percent">
+                            <h3>Wordpress</h3>
+                            <p id="percent">75%</p>
+                        </div>
+                        <div class="item-bare w-75">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     
+</div>
+
+
+    <footer class="footer">
+        <div class="row">
+            <h4 class="nav__logo" style="text-align: center;">Guegzosis</h4>
+            <div class="footer__container">
+                <div class="footer__container--social">
+                    <p>My Social Media</p>
+
+                    <ul class="footer__container--socialmedia">
+                        <li><a class="footer__container--socialmedia__git" href="#"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                        <li><a class="footer__container--socialmedia__face" href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                        <li><a class="footer__container--socialmedia__insta"href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                        <li><a class="footer__container--socialmedia__whatsapp"href="#"><i class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer__container--adress">
+                    <p>My Adresse</p>
+                    <i class="fas fa-map-marker-alt"></i> 365 LOT EL KOURA, RABAT 10140
+                </div>
+            </div>
+            <p class="footer__copyright">
+                Copyright &copy; 2020 Moumni Amine.
+            </p>
+        </div>
+    </footer>
 
 
 
@@ -196,6 +388,7 @@
     </div>
 
     <script src="./js/jquery.waypoints.min.js"></script>
+    <script src="./js/typed.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
