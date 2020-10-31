@@ -5,7 +5,7 @@ $(document).ready(function(){
                 $(this).remove();
                 removeBodyClass();
             })
-        }, 0);
+        }, 2900);
     });
     function removeBodyClass() {
         $('body').removeClass("bodyActive");
@@ -21,7 +21,7 @@ hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
         setTimeout(() => {
             document.querySelector(".socialmedia").classList.toggle("socialActive");
-            body.classList.toggle("bodyActive")
+            //body.classList.toggle("bodyActive")
             
         }, 400);
 })
@@ -43,3 +43,24 @@ var options = {
   };
   
 var typed = new Typed('.typedone', options);
+
+
+/** scroll menu sticky */
+
+window.addEventListener("scroll", function() {
+    var header = document.querySelector("header");
+    header.classList.toggle("sticky", window.scrollY > 0);
+})
+
+
+
+/** model remove */
+
+$(document).ready(function(){
+    $(".fa-times").click(function() {
+        console.log("hi");
+        $(".overlay-back").remove();
+        $(".model").remove();
+    });
+
+})

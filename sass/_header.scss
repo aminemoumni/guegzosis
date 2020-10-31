@@ -8,12 +8,53 @@ header {
 
 .bodyActive {
     overflow: hidden;
+    
 }
 
+.sticky {
+    transition: all 1s;
+    & nav {
+        
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 5000;
+        padding: 0;
+        box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
+        transition: all 1s;
+    }
 
+    & .nav {
+        &__container {
+            
+            
+            
+            
+        }
+        &__logo {
+            color: $color-primary-dark;
+            font-size: 3rem;
+            transition: all 1s;
+        }
+
+        &__menu {
+
+
+            &-item:link,
+            &-item:visited {
+                color: $color-primary-dark;
+                transition: all 1s;
+            }
+        }
+    }
+    
+}
 
 .nav {
     padding: 1rem 0;
+    transition: all 1s;
     //position: fixed;
     //top: 0;
     //width: 100%;
@@ -56,7 +97,6 @@ header {
         }
 
         &.active {
-        
             clip-path: circle(1500px at 93% -10%);
             -webkit-clip-path: circle(1500px at 93% -10%);
         }
@@ -149,6 +189,18 @@ header {
         }
     }
 }
+.active {
+
+    & .nav__menu-item {
+        color: $color-white !important;
+    }
+
+    & .line {
+        @media screen and (max-width: 1000px) { 
+            background: $color-white !important;
+        }
+    }
+}
 
 .socialActive {
     display: flex !important; 
@@ -214,8 +266,12 @@ header {
             margin: 5px;
             display: block;
         }
-    
+}
 
+.sticky .line {
+    @media screen and (max-width: 1000px) { 
+            background: $color-primary;
+    }
 }
 
 .intro {

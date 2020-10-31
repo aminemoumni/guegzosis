@@ -9,10 +9,20 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <script src="./js/jquery.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    
     <title>Guegzosis</title>
 </head>
 <body class="bodyActive">
-    <header>
+    <header class="">
         <nav class="nav">
             <div class="row nav__container">
                 <h4 class="nav__logo">Guegzosis</h4>
@@ -346,7 +356,23 @@
 
 
 
-
+    <div class="overlay-back"></div>
+    <div class="model">
+        <div class="model__container">
+            <i class="fas fa-times"></i>
+            <div class="model__container--logo">
+                <img src="./images/logoGR.png" alt="" class="model__container--logo-img">
+            </div>
+            <div class="model__container--form">
+                <h3>Subscribe to recieve new features</h3>
+                <form action="#">
+                    <input type="text" placeholder="Enter your name"><br>
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn btn-white">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <div class="loading-overlay">
         <div class="loading-overlay__title">
@@ -389,6 +415,7 @@
 
     <script src="./js/jquery.waypoints.min.js"></script>
     <script src="./js/typed.js"></script>
+    <script src="./js/jquery.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

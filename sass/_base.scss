@@ -52,11 +52,12 @@ body {
 
 .text-secondary {
     font-size: 4.5rem;
-    color: transparent;
+    color: $color-primary-dark;
     text-align: center;
-    background-image: linear-gradient(to left, $color-primary-dark, $color-primary-dark, $color-primary, $color-primary-dark, $color-primary-dark);
-    -webkit-background-clip: text;
-    margin-bottom: 4rem;
+    //background-image: linear-gradient(to left, $color-primary-dark, $color-primary-dark, $color-primary, $color-primary-dark, $color-primary-dark);
+    //-webkit-background-clip: text;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 
 }
 

@@ -29,12 +29,13 @@
             margin-bottom: 4rem;
             
             & span {
-                font-size: 3.5rem;
-                color: transparent;
-                background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
-                -webkit-background-clip: text;
+                font-size: 2.5rem;
+                color: $color-primary;
+                //background-image: linear-gradient(to right, $color-primary-dark, $color-primary);
+                //-webkit-background-clip: text;
                 //border-bottom: 2px solid $color-primary-dark;
                 display: inline;
+                text-transform: uppercase;
             }
         }
         &--container {
@@ -83,7 +84,7 @@
         }
 
         & h3 span{
-            background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
+            //background-image: linear-gradient(to right, $color-primary, $color-primary-dark);
         }
     }
 }
@@ -148,6 +149,7 @@
 
     & p {
         font-weight: 800;
+        color: $color-primary-dark;
     }
 }
 .item {
@@ -156,7 +158,7 @@
 .item-bare{
     height: 5px;
     width: 100%;
-    background-color: rgb(179, 178, 178);
+    background-color: rgb(197, 197, 197);
     border-radius: 50rem;
     position: relative;
     &::after {
@@ -167,7 +169,8 @@
         height: 100%;
         width: 0;
         border-radius: 50rem;
-        background: linear-gradient(to right, $color-primary-light, $color-primary, $color-primary, $color-primary-dark);
+        //background: linear-gradient(to right, $color-primary-light, $color-primary, $color-primary, $color-primary-dark);
+        background-color: $color-primary;
         transition: width .8s ease-in;
     }
 }
