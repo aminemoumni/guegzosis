@@ -12,7 +12,7 @@ header {
 }
 
 .sticky {
-    transition: all 1s;
+   //transition: all 1s;
     & nav {
         
         background-color: white;
@@ -21,9 +21,10 @@ header {
         left: 0;
         width: 100%;
         z-index: 5000;
-        padding: 0;
+        padding: .5rem 0;
         box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
-        transition: all 1s;
+        transition-duration: 1s;
+        transition-property: padding;
     }
 
     & .nav {
@@ -36,7 +37,7 @@ header {
         &__logo {
             color: $color-primary-dark;
             font-size: 3rem;
-            transition: all 1s;
+            //transition: all 1s;
         }
 
         &__menu {
@@ -45,7 +46,7 @@ header {
             &-item:link,
             &-item:visited {
                 color: $color-primary-dark;
-                transition: all 1s;
+                transition: all .3s;
             }
         }
     }
@@ -118,6 +119,7 @@ header {
         &-item:link,
         &-item:visited {
             font-size: 1.8rem;
+            font-weight: 600;
             padding: .5rem .5rem;
             margin-right: 2rem;
             text-decoration: none;
@@ -193,6 +195,7 @@ header {
 
     & .nav__menu-item {
         color: $color-white !important;
+        font-size: 5rem;
     }
 
     & .line {
@@ -259,18 +262,56 @@ header {
 }
 .line {
     @media screen and (max-width: 1000px) {
-            
             width: 3rem;
             height: 3px;
             background: $color-white;
             margin: 5px;
             display: block;
+            transition: all .4s ease;
+    }
+    @media only screen and (max-width: $bp-md) {
+        width: 3rem;
+        height: 2px;
+        background: $color-white;
+        margin: 2px;
+        display: block;
+        transition: all .4s ease;
+    }
+}
+.actived {
+
+    & .line:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        @media only screen and (max-width: $bp-md) {
+            transform: translateY(4px) rotate(45deg);
+           
         }
+        
+    }
+
+
+    & .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    & .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        @media only screen and (max-width: $bp-md) {
+        transform: translateY(-4px) rotate(-45deg);
+            
+        }
+    }
 }
 
 .sticky .line {
     @media screen and (max-width: 1000px) { 
-            background: $color-primary;
+            background: $color-primary-dark;
+    }
+}
+
+.sticky .actived .line {
+    @media screen and (max-width: 1000px) { 
+            background: $color-white;
     }
 }
 

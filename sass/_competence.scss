@@ -6,12 +6,22 @@
    display: flex;
    justify-content: space-between;
 
+   @media only screen and (max-width: $bp-md) {
+        flex-direction: column;
+
+    }
+
     &__frontend {
         flex: 0 0 49%;
         //background-color: $color-primary-light;
         position: relative;
         &:hover img {
             filter:grayscale(0%);
+        }
+        &:nth-child(1) {
+            @media only screen and (max-width: $bp-md) {
+                margin-bottom: 8rem;
+            }
         }
         &:nth-child(1)::after {
             content: "";
@@ -21,6 +31,14 @@
             right: -2.3%;
             top: 0;
             background-color: $color-primary-dark;
+
+            @media only screen and (max-width: $bp-md) {
+                bottom: -6.3%;
+                right: 0;
+                top:106.3%;
+                width: 100%;
+                height: 2px;
+            }
 
             
         }
@@ -140,6 +158,50 @@
             width: 10%;
         }
 
+    
+
+    }
+    @media only screen and (max-width: $bp-md) {
+        & .w-100::after {
+            width: 100%;
+        }
+        & .w-95::after {
+            width: 95%;
+        }
+        & .w-90::after {
+            width: 90%;
+        }
+        & .w-85::after {
+            width: 85%;
+        }
+        & .w-80::after {
+            width: 80%;
+        }
+        & .w-75::after {
+            width: 75%;
+        }
+        & .w-70::after {
+            width: 70%;
+        }
+        & .w-60::after {
+            width: 60%;
+        }
+        & .w-50::after {
+            width: 50%;
+        }
+        & .w-40::after {
+            width: 40%;
+        }
+        & .w-30::after {
+            width: 30%;
+        }
+        & .w-20::after {
+            width: 20%;
+        }
+        
+        & .w-10::after {
+            width: 10%;
+        }
     }
 }
 .item-percent {
@@ -171,6 +233,10 @@
         border-radius: 50rem;
         //background: linear-gradient(to right, $color-primary-light, $color-primary, $color-primary, $color-primary-dark);
         background-color: $color-primary;
-        transition: width .8s ease-in;
+        transition: width .5s ease-in;
+        
+        @media only screen and (max-width: $bp-md) {
+
+        }
     }
 }

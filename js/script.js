@@ -19,6 +19,7 @@ const navLinks = document.querySelector(".nav__items");
 const body = document.querySelector("body");
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
+    hamburger.classList.toggle("actived");
         setTimeout(() => {
             document.querySelector(".socialmedia").classList.toggle("socialActive");
             //body.classList.toggle("bodyActive")
@@ -64,3 +65,17 @@ $(document).ready(function(){
     });
 
 })
+
+
+
+
+var options = {
+    strings: ['Welcome to my portfolio, Thank you for your trust!',
+            'Subscribe if you wanna see more!'],
+    typeSpeed: 60,
+    loop: false
+  };
+
+setTimeout(() => {
+    var typed = new Typed('#modelh3', options);
+}, 4200);

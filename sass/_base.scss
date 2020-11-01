@@ -19,9 +19,16 @@ $font-display: 'Lobster', sans-serif;
 
 //GRID
 $grid-width: 114rem;
-$gutter-vertical: 8rem;
-$gutter-vertical-small: 6rem;
+$gutter-vertical: 80rem;
+$gutter-vertical-small: 60rem;
 $gutter-horizontal: 6rem;
+
+
+// REPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-md: 50em; // 800px
+$bp-small: 37.5em ;//600px
 
 *,
 *::after,
@@ -33,6 +40,13 @@ $gutter-horizontal: 6rem;
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 50%;
+    }
+    @media only screen and (max-width: $bp-small) {
+        font-size: 40%;
+    }
 }
 body {
     font-family: $font-primary;
@@ -45,8 +59,30 @@ body {
     max-width: $grid-width;
     margin: 0 auto;
 
-    @media screen and (max-width: 1200px){
-        margin: 0 2rem
+    @media screen and (max-width: 1000px){
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: $bp-md){
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    @media screen and (max-width: 700px){
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 600px){
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 500px){
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    @media screen and (max-width: 400px){
+        max-width: 300px;
+        margin: 0 auto;
     }
 }
 
@@ -59,6 +95,15 @@ body {
     margin-bottom: 3rem;
     text-transform: uppercase;
 
+}
+.text-fourth {
+    font-size: 2rem;
+    color: $color-primary-dark;
+    text-align: center;
+    //background-image: linear-gradient(to left, $color-primary-dark, $color-primary-dark, $color-primary, $color-primary-dark, $color-primary-dark);
+    //-webkit-background-clip: text;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
 }
 
 .fa-chevron-right {

@@ -2,7 +2,6 @@
     
     background-color: $color-grey-light-1;
     &__container {
-        min-height: 100vh;
         display: flex;
         flex-direction: column;
         //justify-content: center;
@@ -84,6 +83,14 @@
         & .fa-heart {
             color: red;
         }
+    }
+}
+
+.fa-chevron-right {
+    vertical-align: middle;
+    color: $color-primary;
+    @media only screen and (max-width: $bp-md) {
+        font-size: 1.2rem;
     }
 }
 

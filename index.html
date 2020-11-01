@@ -21,13 +21,13 @@
     
     <title>Guegzosis</title>
 </head>
-<body class="bodyActive">
+<body class="">
     <header class="">
         <nav class="nav">
             <div class="row nav__container">
                 <h4 class="nav__logo">Guegzosis</h4>
 
-                <div class="nav__items">
+                <div class="nav__items ">
                     <ul class="nav__menu">
                         <li class="nav__menu-items"><a href="#" class="nav__menu-item">About</a></li>
                         <li class="nav__menu-items"><a href="#" class="nav__menu-item">Competences</a></li>
@@ -36,7 +36,7 @@
                     </ul>
                     <a href="https://www.instagram.com/guegzosis/" target="_blank" class="nav__btn">Direct me</a>
                 </div>
-                <div class="hamburger js--nav-icon ">
+                <div class="hamburger js--nav-icon">
                     <div class="line"></div>
                     <div class="line"></div>
                     <div class="line"></div>
@@ -318,9 +318,45 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> 
 </div>
+
+<section class="contact">
+    <div class="row">
+        <h2 class="text-secondary">get in touch with us</h2>
+        <div class="contact__container">
+            <div class="contact__form">
+                <h4 class="text-fourth">Send Happiness</h4>
+                <form action="" class="form">
+                    <div class="form__div">
+                        <input type="text" placeholder=" " id="name" class="form__input">
+                        <label for="name" class="form__label">Full Name</label>
+                    </div>
+                    <div class="form__div">
+                        <input type="text" placeholder=" " id="object" class="form__input successinput"> <!--successinput // errorinput-->
+                        <label for="object" class="form__label successlabel">Object</label> <!--successlabel // errorlabel-->
+                    </div>
+                    <div class="form__div">
+                        <input type="email" placeholder=" " id="email " class="form__input errorinput">
+                        <label for="email" class="form__label errorlabel">Email</label>
+                    </div>
+
+                    <div class="form__div">
+                        <textarea class="form__input textarea" id="message" placeholder=" " cols="30" rows="5"></textarea>
+                        <label for="message" class="form__label">Message</label>
+                    </div>
+                    <button class="btn btn-white">Send</button>
+                </form>
+            </div>
+
+            <div class="contact__img">
+                <div class="contact__img-image">
+                    <img src="./images/contact.jpg" alt="" class="contact__img-image-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <footer class="footer">
@@ -339,7 +375,9 @@
                 </div>
                 <div class="footer__container--adress">
                     <p>My Adresse</p>
-                    <i class="fas fa-map-marker-alt"></i> 365 LOT EL KOURA, RABAT 10140
+                    <span>
+                        <i class="fas fa-map-marker-alt"></i> 365 LOT EL KOURA, RABAT 10140
+                    </span>
                 </div>
             </div>
             <p class="footer__copyright">
@@ -356,7 +394,7 @@
 
 
 
-    <div class="overlay-back"></div>
+    <!-- <div class="overlay-back"></div>
     <div class="model">
         <div class="model__container">
             <i class="fas fa-times"></i>
@@ -364,10 +402,11 @@
                 <img src="./images/logoGR.png" alt="" class="model__container--logo-img">
             </div>
             <div class="model__container--form">
-                <h3>Subscribe to recieve new features</h3>
+                <h3 id="modelh3"></h3>
+                
                 <form action="#">
                     <input type="text" placeholder="Enter your name"><br>
-                    <input type="email" placeholder="Enter your email">
+                    <input type="email" placeholder="Enter your email"><br>
                     <button class="btn btn-white">Subscribe</button>
                 </form>
             </div>
@@ -411,7 +450,7 @@
 
                 
         </div>
-    </div>
+    </div> -->
 
     <script src="./js/jquery.waypoints.min.js"></script>
     <script src="./js/typed.js"></script>
